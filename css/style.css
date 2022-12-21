@@ -142,12 +142,44 @@ li.item-nav.start{
     justify-content: space-between;
 }
 
+/* Cards */
+
 .card > div{
     padding: 10px 0;
 }
 
 .card-header{
     text-align: center;
+}
+
+.card-title::before,
+li.service-user::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f007';
+    margin-right: 5px;
+}
+
+li.service-archive::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f07b';
+    margin-right: 5px;
+}
+
+li.service-share::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f1e0';
+    margin-right: 5px;
+}
+
+li.point-check::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f00c';
+    margin-right: 5px;
+    color: green;
 }
 
 .card li{
