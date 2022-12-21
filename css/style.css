@@ -30,9 +30,19 @@ a{
     margin: 0 auto;
 }
 
+.container-standard{
+    width: 1040px;
+    margin: 0 auto;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
+}
+
+.button{
+    padding: 0 10px;
+    line-height: 1.5rem;
 }
 
 /* DEBUG */
@@ -45,6 +55,11 @@ a{
 .debug [class^="col"]{
     border: 2px solid black;
     /* padding: 10px; */
+}
+
+.debug .page-footer{
+    height: 840px;
+    background-color: black;
 }
 
 /* HEADER */
@@ -82,20 +97,64 @@ li.item-nav.start{
 /* MAIN */
 
 .section-hero{
-    height: 850px;
+    /* height: 850px; */
     background-color: lightskyblue;
     padding-top: 70px;
 }
 
-.row.hero > .col100{
+.col100{
     width: 100%;
+}
+
+.col100 > h1{
+    font-size: 82px;
 }
 
 .row.hero > .col4{
     flex-basis: calc((100% / 12) * 4);
+    padding-top: 98px;
+}
+
+.col4-button{
+    padding: 20px 0;
 }
 
 .row.hero > .col8{
     flex-basis: calc((100% / 12) * 8);
 }
 
+/* Section Business */
+
+.section-business{
+    padding-top: 40px;
+}
+
+.row.radio{
+    gap: 20px;
+}
+
+.row-col-4{
+    gap: 20px;
+}
+
+.row-col-4 > .col4{
+    flex-basis: calc((100% / 12) * 4 - 20px);
+    justify-content: space-between;
+}
+
+.card > div{
+    padding: 10px 0;
+}
+
+.card-header{
+    text-align: center;
+}
+
+.card li{
+    padding: 10px 0;
+}
+
+.card-button a{
+    text-decoration: underline;
+    color: blue;
+}
