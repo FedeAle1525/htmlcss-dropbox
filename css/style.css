@@ -58,13 +58,22 @@ a{
     line-height: 32px;
 }
 
-/* Al primo item della lista tolgo il padding laterale sinistro */
-.list-nav.row li:first-child{
+li.item-nav.logo{
     padding-left: 0;
 }
 
-/* All'ultimo item della lista tolgo il padding laterale destro */
+li.item-nav.start{
+    background-color: blue;
+    color: white;
+}
+
+/* Al primo item della lista tolgo il padding laterale sinistro 
+.list-nav.row li:first-child{
+    padding-left: 0;
+}*/
+
+/* All'ultimo item della lista tolgo il padding laterale destro
 .list-nav.row li:last-child{
     padding-right: 0;
-}
+}*/
 
