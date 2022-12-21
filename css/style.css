@@ -10,7 +10,12 @@ ul{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+    color: currentColor;
+}
 
+/* REGOLE GENERALI */
 
 .container-full{
     width: 100%;
@@ -30,7 +35,7 @@ ul{
 
 .debug .col{
     border: 2px solid black;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 /* HEADER */
@@ -38,5 +43,28 @@ ul{
 .row.between{
     justify-content: space-between;
     padding: 35px 30px;
+}
+
+.list-nav.row{
+    align-items: center;
+}
+
+.list-nav.row > li{
+    padding: 0 16px;
+    /* line-height: 32px; */
+}
+
+.list-nav.row > a{
+    line-height: 32px;
+}
+
+/* Al primo item della lista tolgo il padding laterale sinistro */
+.list-nav.row li:first-child{
+    padding-left: 0;
+}
+
+/* All'ultimo item della lista tolgo il padding laterale destro */
+.list-nav.row li:last-child{
+    padding-right: 0;
 }
 
