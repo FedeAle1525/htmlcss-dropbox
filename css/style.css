@@ -21,6 +21,11 @@ a{
     width: 100%;
 }
 
+.container{
+    width: 1250px;
+    margin: 0 auto;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -47,6 +52,7 @@ a{
 
 .list-nav.row{
     align-items: center;
+    height: 100%;
 }
 
 .list-nav.row > li{
@@ -65,6 +71,8 @@ li.item-nav.logo{
 li.item-nav.start{
     background-color: blue;
     color: white;
+    height: 100%;
+    padding-top: 6px;
 }
 
 /* Al primo item della lista tolgo il padding laterale sinistro 
