@@ -56,6 +56,11 @@ a{
     color: white;
 }
 
+.button-size{
+    width: 100%;
+    text-align: center;
+}
+
 /* DEBUG */
 
 .debug .main-header{
@@ -185,33 +190,42 @@ li.item-nav.logo{
 }
 
 /* Aggiunta icone con "before" */
-.card-title::before,
+.card-title.user-icon::before,
 li.service-user::before{
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: '\f007';
-    /* margin-right: 5px; */
+}
+
+.card-title.team-icon::before,
+li.service-team::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f0c0';
+}
+
+.card-title.company-icon::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f1ad';
 }
 
 li.service-archive::before{
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: '\f07b';
-    margin-right: 5px;
 }
 
 li.service-share::before{
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: '\f1e0';
-    margin-right: 5px;
 }
 
 li.point-check::before{
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: '\f00c';
-    margin-right: 5px;
     color: green;
 }
 
