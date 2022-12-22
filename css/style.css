@@ -68,10 +68,10 @@ a{
     border-bottom: 3px solid black;
 }
 
-.debug [class^="col"]{
-    /* border: 2px solid black; */
-    /* padding: 10px; */
-}
+/* .debug [class^="col"]{
+     border: 2px solid black; 
+    padding: 10px;
+} */
 
 .debug .page-footer{
     height: 840px;
@@ -179,11 +179,10 @@ li.item-nav.logo{
 } */
 
 /* Serve per distanziare elementi della carta tra loro */
-.card > div{
+.card > div,
+.content-col > div{
     padding: 10px 0;
 }
-
-
 
 .card-header{
     text-align: center;
@@ -257,4 +256,9 @@ li.point-check::before{
 .card-button .purchase{
     text-decoration: underline;
     color: blue;
+}
+
+.card-content > .card-button{
+    flex-grow: 1;
+    padding-top: 20px;
 }
