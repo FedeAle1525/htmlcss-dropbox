@@ -40,7 +40,7 @@ a{
 }
 
 [class^="section"]{
-    padding-top: 70px;
+    padding: 60px 0;
 }
 
 .row{
@@ -254,8 +254,9 @@ li.point-check::before{
     padding: 10px 0;
 }
 
-.card-level .level-title,
-.partner-title{
+.level-title,
+.partner-title,
+.operation-title{
     font-weight: 700;
     font-size: 24px;
 }
