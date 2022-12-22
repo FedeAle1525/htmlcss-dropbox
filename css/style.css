@@ -7,7 +7,7 @@
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
 }
 
 ul{
@@ -22,16 +22,16 @@ a{
 /* REGOLE GENERALI */
 
 .container-full{
-    width: 100%;
+    max-width: 100%;
 }
 
 .container{
-    width: 1250px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
 .container-standard{
-    width: 1040px;
+    max-width: 1040px;
     margin: 0 auto;
 }
 
@@ -42,7 +42,14 @@ a{
 
 .button{
     padding: 0 10px;
-    line-height: 1.5rem;
+    line-height: 32px;
+    display: block;
+    width: max-content;
+}
+
+.button-blue{
+    background-color: blue;
+    color: white;
 }
 
 /* DEBUG */
@@ -66,61 +73,58 @@ a{
 
 .row.between{
     justify-content: space-between;
-    padding: 35px 30px;
+    align-items: center;
+    padding: 20px;
 }
 
 .list-nav.row{
     align-items: center;
-    height: 100%;
+    /* height: 100%; */
 }
 
-.list-nav.row > li{
-    padding: 0 16px;
-    /* line-height: 32px; */
-}
-
-.list-nav.row > a{
+.list-nav.row  a{
     line-height: 32px;
+    padding: 0 16px;
 }
 
 li.item-nav.logo{
     padding-left: 0;
 }
 
-li.item-nav.start{
-    background-color: blue;
-    color: white;
-    height: 100%;
-    padding-top: 6px;
-}
-
 /* MAIN */
 
 .section-hero{
     /* height: 850px; */
-    background-color: lightskyblue;
+    background-color: rgb(180, 208, 231);
     padding-top: 70px;
 }
 
-.col100{
-    width: 100%;
+.col12{
+    flex-basis: 100%;
 }
 
-.col100 > h1{
-    font-size: 82px;
+.col12 > h1{
+    font-size: 65px;
+}
+
+.row.hero{
+    row-gap: 30px;
 }
 
 .row.hero > .col4{
     flex-basis: calc((100% / 12) * 4);
-    padding-top: 98px;
-}
-
-.col4-button{
-    padding: 20px 0;
 }
 
 .row.hero > .col8{
     flex-basis: calc((100% / 12) * 8);
+}
+
+.col4-button{
+    margin: 20px 0;
+}
+
+.icon-arrow{
+    font-size: 30px;
 }
 
 /* Section Business */
@@ -186,7 +190,7 @@ li.point-check::before{
     padding: 10px 0;
 }
 
-.card-button a{
+.card-button .purchase{
     text-decoration: underline;
     color: blue;
 }
