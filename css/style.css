@@ -48,6 +48,13 @@ a{
     flex-wrap: wrap;
 }
 
+/* Serve per allineare e distanziare elementi di una colonna */
+.column{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
 .button{
     padding: 0 10px;
     line-height: 32px;
@@ -182,12 +189,13 @@ li.item-nav.logo{
 } */
 
 /* Serve per distanziare elementi della carta tra loro */
-.card > div,
+/* .card > div, */
 .content-col > div{
     padding: 10px 0;
 }
 
 .card-header{
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -284,12 +292,6 @@ li.point-check::before{
 
 .row.no-wrap [class^="col"]{
     padding: 0 20px;
-}
-
-.column{
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
 }
 
 .partner-text{
