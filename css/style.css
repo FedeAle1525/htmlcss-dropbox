@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 img{
     max-width: 100%;
 }
@@ -60,7 +64,7 @@ a{
 }
 
 .debug [class^="col"]{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* padding: 10px; */
 }
 
@@ -133,39 +137,60 @@ li.item-nav.logo{
     padding-top: 40px;
 }
 
-.row.radio{
-    gap: 20px;
-}
-
 .row-col-4{
     row-gap: 20px;
     margin: 0 -20px;
+}
+
+.col12 > h3{
+    font-size: 32px;
+}
+
+/* Classe creata per distanziare input */
+.gap-radio{
+    display: flex;
+    gap: 30px;
 }
 
 .row-col-4 > .col4{
     flex-basis: calc((100% / 12) * 4);
 }
 
+/* Calcolo per dare padding alle colonne è distanziare tra loro cards */
 .row-col-4 [class^="col"]{
     padding: 0 20px;
 }
 
 /* Cards */
 
+.card{
+    border: 1px solid gray;
+    padding: 0 20px;
+}
+
+/* Il bordo non compre tutto lo spazio a causa del padding della card */
+/* .card-header.border-title{
+    border-bottom: 1px solid gray;
+} */
+
+/* Serve per distanziare elementi della carta tra loro */
 .card > div{
     padding: 10px 0;
 }
+
+
 
 .card-header{
     text-align: center;
 }
 
+/* Aggiunta icone con "before" */
 .card-title::before,
 li.service-user::before{
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: '\f007';
-    margin-right: 5px;
+    /* margin-right: 5px; */
 }
 
 li.service-archive::before{
@@ -190,8 +215,29 @@ li.point-check::before{
     color: green;
 }
 
+/* Classe creata per allineare "header" della carta */
+.card-title.gap-icon{
+    justify-content: center;
+}
+
+/* Classe creata per creare spazio tra icone e testo */
+.gap-icon{
+    display: flex;
+    gap: 5px;
+}
+
 .card li{
     padding: 10px 0;
+}
+
+.card-level .level-title{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card-level .level-price,
+.card-point .point-title{
+    font-weight: 700;
 }
 
 .card-button .purchase{

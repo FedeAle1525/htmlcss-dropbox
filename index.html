@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/320390125a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>DropBox</title>
 </head>
 <body class="debug">
@@ -99,32 +102,36 @@
                     </div>
 
                     <!-- Pulsanti -->
-                    <div class="col12">
-                        <input type="radio" name="month" id=""> Fatturazione Mensile
-                        <input type="radio" name="year" id=""> Fatturazione Annuale
+                    <div class="col12 gap-radio">
+                        <div>
+                            <input type="radio" name="month" id=""> Fatturazione Mensile
+                        </div>
+                        <div>
+                            <input type="radio" name="year" id=""> Fatturazione Annuale
+                        </div>
                     </div>
 
                     <!-- Primo Piano -->
                     <div class="col4">
                         <div class="card">
                             <!-- Header Card -->
-                            <div class="card-header">
-                                <span class="card-title">Singolo</span>
+                            <div class="card-header border-title">
+                                <span class="card-title gap-icon">Singolo</span>
                             </div>
                             <!-- Descrizione Livello Card -->
                             <div class="card-level">
                                 <ul>
-                                    <li>Professional</li>
-                                    <li>&euro; 12.00</li>
+                                    <li class="level-title">Professional</li>
+                                    <li class="level-price">&euro; 12.00</li>
                                     <li>/mese</li>
                                 </ul>
                             </div>
                             <!-- Descrizione Servizi Card -->
                             <div class="card-service">
                                 <ul>
-                                    <li class="service-user">1 Utente</li>
-                                    <li class="service-archive">5TB di spazio di archiviazione sicuro</li>
-                                    <li class="service-share">Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                                    <li class="service-user gap-icon">1 Utente</li>
+                                    <li class="service-archive gap-icon">5TB di spazio di archiviazione sicuro</li>
+                                    <li class="service-share gap-icon">Funzioni di produttività premium e condivisione file semplice e sicura</li>
                                 </ul>
                             </div>
                             <!-- Pulsanti Card -->
@@ -137,9 +144,9 @@
                             <!-- Punti Salienti -->
                             <div class="card-point">
                                 <ul>
-                                    <li>Punti salienti del piano</li>
-                                    <li class="point-check">Invia file fino a 100GB con Dropbox Transfer</li>
-                                    <li class="point-check">Cartelle offline su dispositivi mobili</li>
+                                    <li class="point-title">Punti salienti del piano</li>
+                                    <li class="point-check gap-icon">Invia file fino a 100GB con Dropbox Transfer</li>
+                                    <li class="point-check gap-icon">Cartelle offline su dispositivi mobili</li>
                                 </ul>
                             </div>
                         </div>
