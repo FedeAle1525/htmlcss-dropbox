@@ -39,6 +39,10 @@ a{
     margin: 0 auto;
 }
 
+[class^="section"]{
+    padding-top: 70px;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +109,6 @@ li.item-nav.logo{
 .section-hero{
     /* height: 850px; */
     background-color: rgb(180, 208, 231);
-    padding-top: 70px;
 }
 
 .col12{
@@ -137,10 +140,6 @@ li.item-nav.logo{
 }
 
 /* Section Business */
-
-.section-business{
-    padding-top: 40px;
-}
 
 .row-col-4{
     row-gap: 20px;
@@ -243,7 +242,8 @@ li.point-check::before{
     padding: 10px 0;
 }
 
-.card-level .level-title{
+.card-level .level-title,
+.partner-title{
     font-weight: 700;
     font-size: 24px;
 }
@@ -261,4 +261,23 @@ li.point-check::before{
 .card-content > .card-button{
     flex-grow: 1;
     padding-top: 20px;
+}
+
+/* Section Partner */
+
+.row.no-wrap{
+    flex-wrap: nowrap;
+    margin: 0 -20px;
+}
+
+.row.no-wrap > .col7{
+    flex-basis: calc((100% / 12) * 7);
+}
+
+.row.no-wrap > .col5{
+    flex-basis: calc((100% / 12)* 5);
+}
+
+.row.no-wrap [class^="col"]{
+    padding: 0 20px;
 }
