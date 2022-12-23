@@ -48,6 +48,11 @@ a{
     margin: 0 auto;
 }
 
+/* Regola che imposta colore sfondo sezioni */
+.section-hero{
+    background-color: var(--section-bgcolor);
+}
+
 [class^="section"]{
     padding: 60px 0;
 }
@@ -60,6 +65,12 @@ a{
 /* Classe creata per mettere gap tra le righe di una colonna */
 .row-gap{
     row-gap: 30px;
+}
+
+/* Classe che toglie padding dalle colonne */
+.no-gutter{
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -136,11 +147,6 @@ li.item-nav.logo{
 }
 
 /* SECTION HERO */
-
-.section-hero{
-    /* height: 850px; */
-    background-color: var(--section-bgcolor);
-}
 
 .col12{
     flex-basis: 100%;
@@ -327,4 +333,88 @@ li.point-check::before{
 
 .partner-text{
     padding: 40px 20px;
+}
+
+/* SECTION DESIGN */
+
+.section-design{
+    padding: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+.col4.no-gutter,
+.row-col-4.no-gutter{
+    padding: 0;
+    margin: 0;
+}
+
+.col4.no-gutter.column.row-gap{
+    padding: 40px;
+}
+
+.col4.no-gutter.column.row-gap > img{
+    width: 60%;
+}
+
+.list-design.row > li{
+    flex-basis: 50%;
+    /* Serve per dare dimensione quadrata */
+    aspect-ratio: 1;
+}
+
+.list-design > .item-designit{
+    background-color: rgb(162, 211, 155);
+    position: relative;
+}
+
+.list-design > .item-asu{
+    background-color: rgb(97, 8, 43);
+    position: relative;
+}
+
+.list-design > .item-uf{
+    background-color: rgb(0, 147, 206);
+    position: relative;
+}
+
+.list-design > .item-topps{
+    background-color: rgb(255, 28, 28);
+    position: relative;
+}
+
+.list-design > .item-bycicle{
+    background-color: rgb(213, 0, 31);
+    position: relative;
+}
+
+.list-design > .item-hearts{
+    background-color: rgb(180, 208, 231);
+    position: relative;
+}
+
+.list-design > .item-planet{
+    background-color: rgb(12, 35, 129);
+    position: relative;
+}
+
+.list-design > .item-clear{
+    background-color: rgb(255, 218, 63);
+    position: relative;
+}
+
+/* Regola per allineare logo al centro del quadrato */
+.item-designit > img,
+.item-asu > img,
+.item-uf > img,
+.item-topps > img,
+.item-bycicle > img,
+.item-hearts > img,
+.item-planet > img,
+.item-clear > img{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: white;
 }
