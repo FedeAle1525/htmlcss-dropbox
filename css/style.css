@@ -138,7 +138,7 @@ a{
 .row.between{
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .list-nav.row{
@@ -427,3 +427,22 @@ li.point-check::before{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* SECTION FAQ */
+
+.section-faq .col12{
+    margin-bottom: 40px;
+}
+
+.faq > [class^="col"]{
+    padding: 30px 0;
+}
+
+.faq > .col-arrow{
+    padding-right: 20px;
+}
+
+.faq{
+    border: 1px solid var(--color-gray);
+}
+
