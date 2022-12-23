@@ -49,7 +49,8 @@ a{
 }
 
 /* Regola che imposta colore sfondo sezioni */
-.section-hero{
+.section-hero,
+.section-test{
     background-color: var(--section-bgcolor);
 }
 
@@ -60,6 +61,10 @@ a{
 .row{
     display: flex;
     flex-wrap: wrap;
+}
+
+.between{
+    justify-content: space-between;
 }
 
 /* Classe creata per mettere gap tra le righe di una colonna */
@@ -90,6 +95,10 @@ a{
 .button-blue{
     background-color: var(--color-blue);
     color: white;
+}
+
+.button-white{
+    background-color: white;
 }
 
 .button-size{
@@ -175,7 +184,8 @@ li.item-nav.logo{
     margin: 0 -20px;
 }
 
-.col12 > h3{
+.col12 > h3,
+.col > h3{
     font-size: 32px;
 }
 
@@ -416,5 +426,4 @@ li.point-check::before{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    fill: white;
 }
