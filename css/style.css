@@ -128,11 +128,6 @@ a{
     padding: 10px;
 } */
 
-.debug .page-footer{
-    height: 840px;
-    background-color: black;
-}
-
 /* HEADER */
 
 .row.between{
@@ -446,3 +441,23 @@ li.point-check::before{
     border: 1px solid var(--color-gray);
 }
 
+/* FOOTER */
+
+.page-footer{
+    background-color: black;
+    color: white;
+}
+
+.col20{
+    flex-basis: 20%;
+}
+
+.menu-dropbox > .menu-title{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.menu-item > a{
+    line-height: 36px;
+}
