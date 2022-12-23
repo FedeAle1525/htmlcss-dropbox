@@ -1,3 +1,12 @@
+/* VARIABILI */
+
+:root {
+    --section-bgcolor: rgb(180, 208, 231);
+    --color-blue: blue;
+    --color-gray: gray;
+}
+
+
 /* RESET */
 
 *{
@@ -48,11 +57,16 @@ a{
     flex-wrap: wrap;
 }
 
+/* Classe creata per mettere gap tra le righe di una colonna */
+.row-gap{
+    row-gap: 30px;
+}
+
+
 /* Serve per allineare e distanziare elementi di una colonna */
 .column{
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
 }
 
 .button{
@@ -63,7 +77,7 @@ a{
 }
 
 .button-blue{
-    background-color: blue;
+    background-color: var(--color-blue);
     color: white;
 }
 
@@ -76,12 +90,18 @@ a{
     border: 1px solid black;
 }
 
+/* Classe che annulla il reset dei link */
+.link-blue{
+    text-decoration: underline;
+    color: var(--color-blue);
+}
+
 /* DEBUG */
 
-.debug .main-header{
-    /* height: 100px; */
+/* .debug .main-header{
+    height: 100px;
     border-bottom: 3px solid black;
-}
+} */
 
 /* .debug [class^="col"]{
      border: 2px solid black; 
@@ -115,11 +135,11 @@ li.item-nav.logo{
     padding-left: 0;
 }
 
-/* MAIN */
+/* SECTION HERO */
 
 .section-hero{
     /* height: 850px; */
-    background-color: rgb(180, 208, 231);
+    background-color: var(--section-bgcolor);
 }
 
 .col12{
@@ -130,10 +150,6 @@ li.item-nav.logo{
     font-size: 65px;
 }
 
-.row.hero{
-    row-gap: 30px;
-}
-
 .row.hero > .col4{
     flex-basis: calc((100% / 12) * 4);
 }
@@ -142,15 +158,11 @@ li.item-nav.logo{
     flex-basis: calc((100% / 12) * 8);
 }
 
-.col4-button{
-    margin: 20px 0;
-}
-
 .icon-arrow{
     font-size: 30px;
 }
 
-/* Section Business */
+/* SECTION BUSINESS */
 
 .row-col-4{
     row-gap: 20px;
@@ -179,24 +191,47 @@ li.item-nav.logo{
 /* Cards */
 
 .card{
-    border: 1px solid gray;
-    padding: 0 20px;
+    border: 1px solid var(--color-gray);
+    /* Le card devono avere altezza uguale e non adattarsi al contenuto */
+    height: 100%;
 }
 
-/* Il bordo non compre tutto lo spazio a causa del padding della card */
-/* .card-header.border-title{
-    border-bottom: 1px solid gray;
-} */
+.card-level,
+.card-service,
+.card-button,
+.card-point{
+    padding: 0 20px;
+}
 
 /* Serve per distanziare elementi della carta tra loro */
 /* .card > div, */
 .content-col > div{
-    padding: 10px 0;
+    padding: 10px 20px;
 }
 
 .card-header{
     padding: 10px 0;
     text-align: center;
+}
+
+/* Classe per aggiungere bordo sotto card "Header" */
+.card-header::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-gray);
+    margin-top: 10px;
+}
+
+/* Classe per aggiungere riga sotto pulsanti nelle card */
+.card > .card-button::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 60px;
+    background-color: var(--color-gray);
+    margin-top: 20px;
 }
 
 /* Aggiunta icone con "before" */
@@ -266,21 +301,16 @@ li.point-check::before{
     font-weight: 700;
 }
 
-.card-button .purchase{
-    text-decoration: underline;
-    color: blue;
-}
-
 .card-content > .card-button{
     flex-grow: 1;
     padding-top: 20px;
 }
 
-/* Section Partner */
+/* SECTION PARTNER */
 
 .row.no-wrap{
     flex-wrap: nowrap;
-    margin: 0 -20px;
+    margin: 0 -10px;
 }
 
 .row.no-wrap > .col7{
@@ -292,7 +322,7 @@ li.point-check::before{
 }
 
 .row.no-wrap [class^="col"]{
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .partner-text{
