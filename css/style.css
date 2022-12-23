@@ -130,10 +130,13 @@ a{
 
 /* HEADER */
 
-.row.between{
+/* .row.between{
     justify-content: space-between;
     align-items: center;
-    /* padding: 20px; */
+} */
+
+.main-header .row.between{
+    padding: 20px;
 }
 
 .list-nav.row{
